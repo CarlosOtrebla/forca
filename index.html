@@ -12,8 +12,8 @@
 <body>
     <header><h1>Jogo da Forca</h1></header>
     <main>
-        <section>mensagens</section>
-        <section class="imgForca">
+        <section id="idMensagem">mensagens</section>
+        <section id="idImgForca" class="imgForca">
             imagem
         </section>
         <label for="idLetra">Digite uma letra</label>
@@ -21,7 +21,11 @@
 
     </main>
     <footer>
-      
+      <form action="" method="get">
+        <label for="idNovaPalavra">Digite uma palavra para adiciona-la ao jogo e tecle <strong>Enter</strong></label>
+        <input type="text" name="novaPalavra" id="idNovaPalavra">
+        <input type="button" value="Adiciona" onclick="adicionaPalavraNoArray()">
+      </form>
     </footer>
 </body>
 </html>
