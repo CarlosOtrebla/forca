@@ -2,16 +2,20 @@
     padding: 0px;
     margin: 0px;
 }
-/* 
-body {
 
-
-} */
+main {
+    
+    /* display: flex; */
+    /* position: absolute; */
+    border-style: dashed;
+    /* justify-content: space-between; */
+    width: 95%;  
+}
 
 .imgForca {
     background-color: red;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -20,9 +24,66 @@ body {
     font-size: x-large;
     margin-top: 30px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center;    
 }
+
 #idNovaPalavra {
     margin-top: 30px;
 }
+
+.teclas {
+    position: relative;
+    background-color: cadetblue;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+}
+
+.tecla {
+    height: 40px;
+    width:  40px;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.tecla:hover {
+    background-color: rgba(210, 221, 49, 0.185);
+    color: aliceblue;
+}
+
+.center {
+        margin-left: 10px;
+    
+}
+
+.bottom {
+    margin-left: 20px;
+}
+
+h2 {
+    position: relative;
+    border-style: dotted;
+    height: max-content;
+    display: inline;
+}
+
+
+.imgForca {
+    position: relative;
+}
+
+footer {
+    background-color: rgb(164, 201, 211);
+    position: relative;
+    display: inline-block;
+    align-items: end;
+    height:fit-content
+}
+#idIniciaJogo {
+    padding: 5px;
+    margin: 10px;
+}
+
 

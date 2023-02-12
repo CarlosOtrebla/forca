@@ -12,12 +12,51 @@
 <body>
     <header><h1>Jogo da Forca</h1></header>
     <main>
-        <section id="idMensagem">mensagens</section>
+      <input id="idIniciaJogo" type="button" value="Inicia Jogo" onclick="iniciarJogo()">        
         <section id="idImgForca" class="imgForca">
             imagem
         </section>
-        <label for="idLetra">Digite uma letra</label>
-        <input type="text" name="letra" id="idLetra" maxlength="1">
+
+        <section class="teclas" id="idTecla">
+          <h2>Escolha uma letra:</h2>
+          <form class="top">
+            <input class="tecla" id="id_q"type="button" value="Q" onclick="escolherLetra()">
+            <input class="tecla" id="id_w"type="button" value="W" onclick="escolherLetra()">
+            <input class="tecla" id="id_e"type="button" value="E" onclick="escolherLetra()">
+            <input class="tecla" id="id_r"type="button" value="R" onclick="escolherLetra()">
+            <input class="tecla" id="id_t"type="button" value="T" onclick="escolherLetra()">
+            <input class="tecla" id="id_y"type="button" value="Y" onclick="escolherLetra()">
+            <input class="tecla" id="id_u"type="button" value="U" onclick="escolherLetra()">
+            <input class="tecla" id="id_i"type="button" value="I" onclick="escolherLetra()">
+            <input class="tecla" id="id_o"type="button" value="O" onclick="escolherLetra()">
+            <input class="tecla" id="id_p"type="button" value="P" onclick="escolherLetra()">
+          </form>
+          <form class="center">
+            <input class="tecla" id="id_a"type="button" value="A" onclick="escolherLetra()">
+            <input class="tecla" id="id_s"type="button" value="S" onclick="escolherLetra()">
+            <input class="tecla" id="id_d"type="button" value="D" onclick="escolherLetra()">
+            <input class="tecla" id="id_f"type="button" value="F" onclick="escolherLetra()">
+            <input class="tecla" id="id_g"type="button" value="G" onclick="escolherLetra()">
+            <input class="tecla" id="id_h"type="button" value="H" onclick="escolherLetra()">
+            <input class="tecla" id="id_j"type="button" value="J" onclick="escolherLetra()">
+            <input class="tecla" id="id_k"type="button" value="K" onclick="escolherLetra()">
+            <input class="tecla" id="id_l"type="button" value="L" onclick="escolherLetra()">
+            <input class="tecla" id="id_ç"type="button" value="Ç" onclick="escolherLetra()">
+          </form>
+          <form class="bottom">
+            <input class="tecla" id="id_z"type="button" value="Z" onclick="escolherLetra()">
+            <input class="tecla" id="id_x"type="button" value="X" onclick="escolherLetra()">
+            <input class="tecla" id="id_c"type="button" value="C" onclick="escolherLetra()">
+            <input class="tecla" id="id_v"type="button" value="V" onclick="escolherLetra()">
+            <input class="tecla" id="id_b"type="button" value="B" onclick="escolherLetra()">
+            <input class="tecla" id="id_n"type="button" value="N" onclick="escolherLetra()">
+            <input class="tecla" id="id_m"type="button" value="M" onclick="escolherLetra()">   
+          </form>
+        </section>
+        <section class="palavraOculta" id="idPalavraOculta"></section>
+        <section class="letras_escolhidas" id="idLetraEscolhida"></section>
+       
+ 
 
     </main>
     <footer>
