@@ -41,6 +41,7 @@ const buscarPalavraNoArray = ()=> {
     let posicao = randomNumber()
     let palavra = palavras[posicao]
     return palavra
+    
 }
 
 const buscaLetraNaPalavra = (letra) => {
