@@ -2,9 +2,9 @@
 //     "abacate", "bola", "cachorro", "dado", "elefante","faca", "guitarra", "helicóptero", "internet", "jardim", "kangaroo", "leão", "macaco", "navio", "óculos", "piano", "quarto", "relógio", "sino", "tigre", "uva", "voo", "xícara", "zebra", "água", "banana", "casa", "dinheiro", "elefante", "fada", "girafa", "helicóptero", "igreja", "janela", "lebre", "maçã", "ninho", "óleo", "pera", "quadro", "rato", "sapato", "Naruto", "torre", "urso", "vaca", "xadrez", "árvore", "bebê", "cavalo", "dragão", "estrela", "foguete", "gelo", "hidrante", "ijuí", "jabuti", "lapis", "mesa", "navio", "ouro", "pássaro", "quebra-cabeça", "rã", "sol", "tambor", "unicórnio", "vírus", "xarope", "água-viva", "banheiro", "cachorro-quente", "dado", "elefante", "flor", "galinha", "hortelã", "igreja", "jardim", "laranja", "melancia", "novembro", "orquídea", "pato", "queijo", "rato", "sorvete", "teclado", "ursinho", "vassoura", "xícara", "yogurte", "zebra"
 //   ];  
   
-//   const palavras = [
-//     "abacate", "bola", "cachorro", "dado", "elefante","faca"
-//   ]; 
+  const palavras = [
+    "abacate", "bola", "cachorro", "dado", "elefante","faca"
+  ]; 
 
 // const palavras = [];
 
@@ -13,7 +13,7 @@ localStorage.setItem("palavras", JSON.stringify(palavras));
 
 
 const adicionaPalavraNoArray = ()=>  {
-    const palavras = JSON.parse(localStorage.getItem("palavras"));
+    palavras = JSON.parse(localStorage.getItem("palavras"));
     const elemento = document.getElementById("idNovaPalavra")
     const novaPalavra = elemento.value    
         if(novaPalavra == ''){
