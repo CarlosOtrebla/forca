@@ -6,7 +6,11 @@
     "abacate", "bola", "cachorro", "dado", "elefante","faca"
   ]; 
 
+
 // const palavras = [];
+
+const palavraDaVez = '';
+const letraEscolhida = '';
 
 palavras = JSON.parse(localStorage.getItem("palavras"));
 localStorage.setItem("palavras", JSON.stringify(palavras));
@@ -40,14 +44,15 @@ const randomNumber = () => {
 const buscarPalavraNoArray = ()=> {
     let posicao = randomNumber()
     let palavra = palavras[posicao]
-    return palavra
-    
+    return palavra    
 }
 
-const buscaLetraNaPalavra = (letra) => {
-    let palavra = buscarPalavraNoArray()
+const buscaLetraNaPalavra = (letra, palavra) => {
+    let palavra = palavra
     return palavra.includes(letra)
 }
+
+console.info(buscaLetraNaPalavra)
 
 const retornaTeclaPressionada = () => {
     document.getElementById('idLetra').addEventListener("keypress", function(event) {
@@ -56,11 +61,11 @@ const retornaTeclaPressionada = () => {
 }
 
 const iniciarJogo = () => {
-    localStorage.setItem("palavras", JSON.stringify(palavras));
-    const palavras = JSON.parse(localStorage.getItem("palavras"));
-    const palavraSorteada = buscarPalavraNoArray()
-    window.alert(palavraSorteada)
+    let palavraDaVez = buscarPalavraNoArray
+}
 
+const escolherLetra = () => {
+    let palavra =
 }
    
 

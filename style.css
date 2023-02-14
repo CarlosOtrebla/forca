@@ -53,6 +53,12 @@ main {
     color: aliceblue;
 }
 
+.tecla:active {
+    height: 40px;
+    width:  40px;
+    color: black;
+}
+
 .center {
         margin-left: 10px;
     
