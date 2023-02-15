@@ -48,7 +48,7 @@ const buscarPalavraNoArray = ()=> {
 }
 
 const buscaLetraNaPalavra = (letra, palavra) => {
-    let palavra = palavra
+    let palavra = palavraDaVez
     return palavra.includes(letra)
 }
 
@@ -61,15 +61,16 @@ const retornaTeclaPressionada = () => {
 }
 
 const iniciarJogo = () => {
-    let palavraDaVez = buscarPalavraNoArray
+    let palavraDaVez = buscarPalavraNoArray()
+    window.alert(palavraDaVez)
 }
 
-const escolherLetra = () => {
-    let palavra =
+const escolherLetra = (letra) => {
+    
 }
    
 
-
+console.log(iniciarJogo())
 
 
 
